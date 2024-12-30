@@ -1,0 +1,81 @@
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background-color: #fff5f5;
+    font-family: Arial, sans-serif;
+}
+
+#container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    color: #ff6b6b;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    animation: bounce 1s ease;
+}
+
+#image-container {
+    margin: 2rem 0;
+}
+
+#image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.birthday-message {
+    font-size: 1.5rem;
+    line-height: 1.6;
+    color: #FF6EB4;
+    margin: 2rem 0;
+}
+
+#gifs-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+
+.gif-wrapper {
+    max-width: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.gif-wrapper:hover {
+    transform: translateY(-5px);
+}
+
+.gif-wrapper img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+@keyframes bounce {
+    0% { transform: translateY(-20px); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+    
+    .gif-wrapper {
+        max-width: 250px;
+    }
+}
